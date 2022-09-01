@@ -17,7 +17,7 @@ export default function Item({ increment, nombre, descripcion, itemStock }) {
       <p>{descripcion}</p>
       <h5>
         En stock:
-        <span className={hasProductStock && 'active'}>
+        <span className={hasProductStock ? 'active' : undefined}>
           {hasProductStock ? 'agotado' : stock}
         </span>
       </h5>
